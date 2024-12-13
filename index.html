@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML & CSS Lab</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <header>
+      <h1 style="color: white; cursor: progress;">HTML & CSS Lab</h1>
+    </header>
+    <!-- Navbar  -->
+    <div class="navbar">
+      <a href="#" id="a1">Link 1</a>
+      <div class="dropdown">
+        <!-- <button class="dropbtn">Dropdown</button> -->
+        <a href="#">Link 2</a>
+        <div class="dropdown-content">
+          <a href="#">DD_Link_1</a>
+          <a href="#">DD_Link_2</a>
+          <a href="#">DD_Link_3</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <a href="#">Link 3</a>
+        <div class="dropdown-content">
+          <a href="#">DD_Link_1</a>
+          <a href="#">DD_Link_2</a>
+          <a href="#">DD_Link_3</a>
+        </div>
+      </div>
+    </div>
+    <!-- Navbar Ends -->
+
+    <!-- Bar starts from here -->
+
+    <div class="myBar">
+      <div class="bar-container">
+        <div class="bar" style="--bar-height: 30%" title="30%">
+          <span>30%</span>
+        </div>
+        <div class="bar" style="--bar-height: 40%" title="40%">
+          <span>40%</span>
+        </div>
+        <div class="bar" style="--bar-height: 80%" title="80%">
+          <span>80%</span>
+        </div>
+      </div>
+      <h1 style="color: white;">Bar Plot</h1>
+    </div>
+
+    <!-- Bar Ends here -->
+
+    <!-- Form starts from here -->
+
+    <div class="container">
+        <h2>Create Your Gmail Account</h2> <br>
+        <form action="#" method="POST">
+            <!-- Full Name -->
+            <label for="fullname">Full Name</label>
+            <input type="text" id="fullname" name="fullname" placeholder="Enter Full Name" required>
+    
+            <!-- Email Address -->
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="Enter Gmail Address" required>
+    
+            <!-- Phone Number -->
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter Phone Number" pattern="[0-9]{10}" required>
+    
+            <!-- Password -->
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Enter Password" required>
+    
+            <!-- Submit and Reset Buttons -->
+            <input type="submit" class="btn" value="Submit">
+            <input type="reset" class="btn btn-reset" value="Reset">
+        </form>
+    </div>
+    
+    <!-- Form Ends here -->
+    <footer style="text-align: center;">
+        <!-- Follow on LinkedIn -->
+        <a 
+              class="dropdown-item" href="https://www.linkedin.com/in/abhinav-raj-iitR"
+              target="_blank" style="color: red;display: inline; margin-left: 5%; position: relative;"> <i class="fa fa-linkedin-square" style="font-size:30px;color:red; margin-right: 4px; " ></i>Follow Me on LinkedIn</a>
+              <!-- Follow on Github -->
+              <a class="dropdown-item" href="https://github.com/erabhinavraj" target="_blank" style="color: red; display: inline; margin-left: 5%"><i class="fa fa-github-square" style="font-size:30px;color:red; margin-right: 4px; " ></i>Follow Me on GitHub</a>
+       <p style="color: red; margin-left: 6%">© 2024 Abhinav Raj. All Rights Reserved.</p>
+      </footer>
+  </body>
+</html>
